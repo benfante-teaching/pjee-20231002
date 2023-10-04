@@ -31,6 +31,5 @@ public class HelloServlet extends HttpServlet {
         session.setAttribute("name", name);
         resp.sendRedirect("/demo/hello");
     }
-    
 
 }
