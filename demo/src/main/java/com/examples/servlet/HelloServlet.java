@@ -3,6 +3,7 @@ package com.examples.servlet;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
@@ -12,12 +13,12 @@ public class HelloServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        // Set response content type
-        resp.setContentType("text/plain");
+        
+        String name = "Lucio";
+        req.setAttribute("name", name);
 
-        // Actual logic goes here.
-        PrintWriter writer = resp.getWriter();
-        writer.println("Hello Servlet!");
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/WEB-INF/jsp/hello.jsp");
+        dispatcher.forward(req, resp);
     }
     
 
