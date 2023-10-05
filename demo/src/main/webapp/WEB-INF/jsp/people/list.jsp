@@ -26,6 +26,6 @@ pageEncoding="UTF-8"%>
         </c:forEach>
       </tbody>
     </table>
-    <a href="/demo/people/add">Add person</a>
+    <a href="<%= request.getContextPath() %>/people/add">Add person</a>
   </body>
 </html>

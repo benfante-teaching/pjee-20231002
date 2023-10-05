@@ -10,9 +10,10 @@
     <div>
         <form action="/demo/people/add" method="POST">
             <label>Name: </label>
-            <input type="text" name="newName" >
+            <input type="text" name="newName" value="${param.newName}">
             <input type="submit" value="Add person">
         </form>
+        <div>${nameError}</div>
     </div>
 </body>
 </html>
