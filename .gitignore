@@ -1,2 +1,15 @@
 demo/.vscode
 demo/target
+jpa-examples/target/jpa-examples-1.0-SNAPSHOT.jar
+jpa-examples/target/classes/META-INF/persistence.xml
+jpa-examples/target/classes/com/example/jpa/App.class
+jpa-examples/target/classes/com/example/jpa/entity/Film.class
+jpa-examples/target/classes/com/example/jpa/entity/Language.class
+jpa-examples/target/maven-archiver/pom.properties
+jpa-examples/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+jpa-examples/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+jpa-examples/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst
+jpa-examples/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
+jpa-examples/target/surefire-reports/com.example.jpa.AppTest.txt
+jpa-examples/target/surefire-reports/TEST-com.example.jpa.AppTest.xml
+jpa-examples/.vscode/settings.json
