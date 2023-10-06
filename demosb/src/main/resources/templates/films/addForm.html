@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a Film</title>
+</head>
+<body>
+    <h1>Add a film</h1>
+    <form action="#" th:action="@{'/films'}" th:object="${filmForm}" method="POST">
+        <div>
+            <label>Title</label>
+            <input th:field="*{title}"/>
+        </div>
+        <div>
+            <label>Language</label>
+            <select th:field="*{language}">
+                <option value="1">Italian</option>
+                <option value="2">English</option>
+            </select>
+        </div>
+        <div>
+            <input type="submit" value="Save">
+        </div>
+    </form>
+</body>
+</html>
