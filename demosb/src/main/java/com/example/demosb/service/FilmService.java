@@ -28,9 +28,9 @@ public class FilmService {
         return filmRepository.findById(id).get();
     }
 
-    public void saveFilm(FilmForm filmForm) {
+    public Film saveFilm(FilmForm filmForm) {
         Film film = new Film(null, filmForm.getTitle(),
             languageRepository.findById(filmForm.getLanguage()).get());
-        filmRepository.save(film);
+        return filmRepository.save(film);
     }
 }
